@@ -1,5 +1,5 @@
-#AOC 2015 Day 1
-#by Jacob Farabee
+#Advent of Code 2015 Day 1
+#written by Jacob Farabee
 
 file=open("d1input.txt", "r")
 
