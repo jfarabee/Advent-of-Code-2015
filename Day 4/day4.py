@@ -10,6 +10,7 @@ sentinel = False
 
 while not sentinel:
     encode_string = input + str(increment)
+    #encode input string and then hash in md5
     hash_bytes = hashlib.md5(encode_string.encode())
     #below: check whether hex (i.e. not byte) representation of MD5 hash has
     #first 5 characters as '00000'
