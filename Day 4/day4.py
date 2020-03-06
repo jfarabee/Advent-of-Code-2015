@@ -17,7 +17,7 @@ while not sentinel:
     hash_string = hash_bytes.hexdigest()
     if hash_string[0:5] == "00000":
         print('Increment for five zeroes is ', increment)
-    #see above for reasoning, part two of day 4 specifies a substring of 6 zeroes
+    #part two of day 4 specifies a substring of 6 zeroes
     if hash_string[0:6] == "000000":
         print('Increment for six zeroes is ', increment)
         sentinel = True

@@ -1,4 +1,4 @@
-#Advent of Code 2015 Day 4
+#Advent of Code 2015 Day 5
 #written by Jacob Farabee
 
 file=open("d5input.txt", "r")
@@ -14,7 +14,6 @@ substrings = ["ab", "cd", "pq", "xy"]
 
 for string in input_strings:
     double = False
-    vowels_three = False
     vowels_cnt = 0
     substring = False
     increment = 0
@@ -28,10 +27,7 @@ for string in input_strings:
         if char in vowels:
             vowels_cnt += 1
         increment += 1
-    if vowels_cnt > 3:
-        vowels_three = True
-    if vowels_three and double and not substring:
-        print(string)
+    if vowels_cnt >= 3 and double and not substring:
         nice_strings += 1
 
 print("Nice strings: ", nice_strings)
